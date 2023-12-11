@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dropdown mega menu</title>
+    <link rel="stylesheet" type="text/css" href="../megamenu.css">
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+ /* background-color: #000
+  border-color:#000;
+  color: #000*/
+    background: linear-gradient(
+     105deg,
+     #88beee ,
+     #0a2e73
+ );
+  height: 100vh;
+  width: 100%;
+}
+.background{
+  /*background: linear-gradient(#e66465, #9198e5);*/s
+}
+.wrapper{
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* height: 600px;*/
+ padding: top:10px;
+
+}
+
+.registration_form{
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  width: 400px;
+  border: 1.3px solid #9597a6;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.registration_form .title{
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: white;
+  background:rgb(13, 98, 215);
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: -25px;
+  margin-left:-25px;
+  margin-right:-25px;
+}
+
+.form_wrap{
+  margin-top: 35px;
+}
+
+.form_wrap .input_wrap{
+  margin-bottom: 15px;
+}
+
+.form_wrap .input_wrap:last-child{
+  margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label{
+  display: block;
+  margin-bottom: 3px;
+  color: #1a1a1f;
+}
+
+.form_wrap .input_grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_wrap .input_grp  input[type="text"]{
+  width: 165px;
+}
+
+.form_wrap  input[type="text"]{
+  width: 100%;
+  border-radius: 3px;
+  border: 1.3px solid #9597a6;
+  padding: 10px;
+  outline: none;
+}
+
+
+
+.form_wrap .submit_btn{
+  width: 100%;
+  background: #0d6ad7;
+  padding: 15px;
+  border: 0;
+  color:white;
+  font-size:17px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.form_wrap .submit_btn:hover{
+  background: #051c94;
+}
+.fallbackDatePicker{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 10px;
+}
+.label{
+  display: block;
+  font:1rem 'Fira Sans', sans-serif;
+}
+input, label{
+  margin: 0.4rem 0;
+}
+.city{
+  width: 100%;
+  border-radius: 3px;
+  border: 1.3px solid #9597a6;
+  padding: 10px;
+  outline: none;
+}
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.start{
+  width: 100%;
+}
+.trip-start{
+  width: 120px;
+  height: 20px;
+}
+
+  </style>
+  </head>
+  <body>
+    <div class="background"></div>
+     <header>
+        <div class="menubar">
+        <div class="alignment">
+            <div class="main_menu_area">
+                <div class="logo">
+                    <h1>ARIFIN</h1>
+                </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="C:\Users\i\Desktop\uy\class6.2\Web site/3/index.html">Home</a></li>
+        <li><a href="#">Shop</a>
+          <div class="mega-menu">     
+            <div class="sub">                  
+              <ul>
+                <li><a href="#"><h4>Sale</h4></a></li>
+                <li><a href="#"><h4>Popular</h4></a></li>
+                <li><a href="#"><h4>Top Brands</h4></a></li>
+                <li><a href="#">Westelm</a></li> 
+                <li><a href="#">Linwood Oak</a></li> 
+                <li><a href="#">Uptun Palace</a></li> 
+                <li><a href="#">Noel Jones</a></li>
+                <li><a href="#">5th Avenue</a></li>               
+              </ul>
+            </div>
+            <div class="sub">
+              <ul>
+                <li><a href="#"><h4>Indoor</h4></a></li>
+                <li><a href="#">Sofa</a></li> 
+                <li><a href="#">Bed Frames</a></li> 
+                <li><a href="#">TV &amp; Entertainment</a></li>
+                <li><a href="#">Dining Tables</a></li> 
+                <li><a href="#">Desks</a></li> 
+                <li><a href="#">Storage</a></li> 
+                <li><a href="#">Cabinets</a></li>  
+              </ul>
+            </div>
+            <div class="sub">
+              <ul>
+                <li><a href="#"><h4>Outdoor</h4></a></li>
+                <li><a href="#">Benches</a></li> 
+                <li><a href="#">Tables &amp; Chairs</a></li> 
+                <li><a href="#">Ornaments</a></li> 
+                <li><a href="#">Plant &amp; Garden</a></li>
+                <li><a href="#">Sheds</a></li>   
+                <li><a href="#">Ponds</a></li>                  
+              </ul>
+            </div>
+            <div class="sub">
+              <a href="#">
+                <img src="https://loremflickr.com/cache/resized/65535_50850469708_86a9184210_320_240_nofilter.jpg" alt="" />
+                <p><strong></strong></p>
+              </a>
+            </div>
+          </div>   
+        </li>        
+        <li><a href="#">About</a></li>       
+        <li><a href="C:\Users\i\Desktop\uy\class6.2\Web site/1/index.html">Contact</a></li> 
+        <li><a href="C:\Users\i\Desktop\uy\class6.2\Web site/2/index.html">Registration</a></li>
+      </ul>
+    </nav>
+  </div>
+<hr>
+</header>
+<div class="wrapper">
+    <div class="registration_form">
+      <div class="title">
+        Registration Form
+      </div>
+      <form>
+        <div class="form_wrap">
+          <div class="input_grp">
+            <div class="input_wrap">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname">
+            </div>
+            <div class="input_wrap">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname">
+            </div>
+          </div>
+          <div class="input_wrap">
+            <label for="email">Email Address</label>
+            <input type="text" id="email">
+          </div>
+
+          <div class="input_wrap">
+            <label for="city">Phone Number</label>
+            <input type="Number" id="city" class="city" min="0">
+          </div>
+          <div class="input_wrap">
+            <label for="country">Address</label>
+            <input type="text" id="country">
+          </div>
+
+          <div class="input_wrap">
+            <label>Gender</label>
+            <ul>
+              <li>
+                <label class="radio_wrap">
+                  <input type="radio" name="gender" value="male" class="input_radio">
+                  <span>Male</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio_wrap">
+                  <input type="radio" name="gender" value="female" class="input_radio">
+                  <span>Female</span>
+                </label>
+              </li>
+            </ul>
+          </div>         
+          <label for="start">Date of Birth</label>
+          <input type="date" name="trip-start" id="start" class="trip-start" value="2023-12-09" min="1940-01-01" max="2023-12-09" />
+          <div class="input_wrap">
+            <input type="submit" value="Register Now" class="submit_btn">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>   
